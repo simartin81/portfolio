@@ -1,0 +1,47 @@
+#slideshow{
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto;
+}
+.slide{
+    float: left;
+    height: 510px;
+    width: 728px;
+}
+.slide-wrapper{
+    width: calc(728px*10);
+    animation: slide 10s ease infinite;
+}
+@keyframes slide{
+    10%{
+        margin-left: 0px;
+    }
+    10%{
+        margin-left: calc(-728px * 1)
+    }
+    10%{
+        margin-left: calc(-728px * 2)
+    }
+    10%{
+        margin-left: calc(-728px * 3)
+    }
+    10%{
+        margin-left: calc(-728px * 4)
+    }
+    10%{
+        margin-left: calc(-728px * 5)
+    }
+    10%{
+        margin-left: calc(-728px * 6)
+    }
+    10%{
+        margin-left: calc(-728px * 7)
+    }
+    10%{
+        margin-left: calc(-728px * 8)
+    }
+    10%{
+        margin-left: calc(-728px * 9)
+    }
+}
