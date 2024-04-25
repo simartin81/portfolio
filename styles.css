@@ -11,7 +11,11 @@
 }
 .slide-wrapper{
     width: calc(728px*10);
-    animation: slide 10s ease infinite;
+    animation: slide 130s ease infinite;
+}
+img{
+    height: auto;
+    max-width: 100%;
 }
 @keyframes slide{
     10%{
@@ -44,4 +48,17 @@
     10%{
         margin-left: calc(-728px * 9)
     }
+}
+body{
+    background-color: #214237;
+}
+header{
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+}
+main>h2{
+    background-color: #C26B87;
+}
+main>p{
+    background-color: #C26B87;
 }
