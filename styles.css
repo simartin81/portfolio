@@ -11,54 +11,87 @@
 }
 .slide-wrapper{
     width: calc(728px*10);
-    animation: slide 130s ease infinite;
+    animation: slide 10s linear infinite normal forwards;
+}
+.slide-wrapper.two{
+    animation-delay: 10s;
 }
 img{
     height: auto;
     max-width: 100%;
 }
 @keyframes slide{
-    10%{
+    0%{
         margin-left: 0px;
     }
     10%{
         margin-left: calc(-728px * 1)
     }
-    10%{
+    20%{
         margin-left: calc(-728px * 2)
     }
-    10%{
+    30%{
         margin-left: calc(-728px * 3)
     }
-    10%{
+    40%{
         margin-left: calc(-728px * 4)
     }
-    10%{
+    50%{
         margin-left: calc(-728px * 5)
     }
-    10%{
+    60%{
         margin-left: calc(-728px * 6)
     }
-    10%{
+    70%{
         margin-left: calc(-728px * 7)
     }
-    10%{
+    80%{
         margin-left: calc(-728px * 8)
     }
-    10%{
+    90%{
         margin-left: calc(-728px * 9)
+    }
+    100%{
+        margin-left: calc(-728px * 10)
     }
 }
 body{
     background-color: #214237;
+    font-family: "kumbh-sans-variable", sans-serif;
+    font-variation-settings: "wght" 400;
 }
 header{
     color: #fff;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: crete, serif;
 }
 main>h2{
     background-color: #C26B87;
+    width: fit-content;
+    padding: 5px;
 }
-main>p{
+main p{
     background-color: #C26B87;
+    max-width: 850px;
+    padding: 5px;
+}
+.music{
+    background-color: #C26B87;
+    max-width: 800px;
+}
+nav>a{
+    display: block;
+    width: 60px;
+    color: white;
+    display: inline;
+}
+nav>a:hover{
+    color:#C26B87;
+    background-color: #214237;
+}
+header>a{
+    color: white;
+}
+header>a:hover{
+    color: #C26B87;
+    background-color: #214237;
 }
