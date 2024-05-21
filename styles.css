@@ -11,10 +11,11 @@
 }
 .slide-wrapper{
     width: calc(728px*10);
-    animation: slide 10s linear infinite normal forwards;
+    animation: slide 120s linear infinite normal forwards;
+    
 }
 .slide-wrapper.two{
-    animation-delay: 10s;
+    animation-delay: 100s;
 }
 img{
     height: auto;
