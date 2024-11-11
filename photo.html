@@ -13,6 +13,9 @@
     <link rel="mask-icon" href="downloads/favicon_package_v0/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <header>
@@ -24,72 +27,49 @@
     </nav>
 </header>
 <main>
-   <div id="slideshow">
-    <div class="slide-wrapper">
-        <div class="slide">
-        <img src="images/bridget1.jpg" alt="bridget">
-    </div>
-        <div class="slide">
-        <img src="images/bridget2.jpg" alt="bridget">
+<div class= ".container">
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="images/bridget1.jpg"></div>
+          <div class="swiper-slide"><img src="images/bridget2.jpg"></div>
+          <div class="swiper-slide"><img src="images/bridget3.jpg"></div>
+          <div class="swiper-slide"><img src="images/bridget4.jpg"></div>
+          <div class="swiper-slide"><img src="images/bridget5.jpg"></div>
+          <div class="swiper-slide"><img src="images/jackson1.jpg"></div>
+          <div class="swiper-slide"><img src="images/jackson2.jpg"></div>
+          <div class="swiper-slide"><img src="images/tucker1.jpg"></div>
+          <div class="swiper-slide"><img src="images/tucker2.jpg"></div>
+          <div class="swiper-slide"><img src="images/tucker3.jpg"></div>
         </div>
-    <div class="slide">
-        <img src="images/bridget3.jpg" alt="bridget">
-        </div>
-    <div class="slide">
-        <img src="images/bridget4.jpg" alt="bridget">
-        </div>
-    <div class="slide">
-        <img src="images/bridget5.jpg" alt="bridget">
-        </div>
-    <div class="slide">
-        <img src="images/jackson1.jpg" alt="jackson">
-    </div>
-    <div class="slide">
-        <img src="images/jackson2.jpg" alt="jackson">
-    </div>
-    <div class="slide">
-        <img src="images/tucker1.jpg" alt="tucker">
-    </div>
-    <div class="slide">
-        <img src="images/tucker2.jpg" alt="tucker">
-    </div>
-    <div class="slide">
-        <img src="images/tucker3.jpg" alt="tucker">
-    </div>
-</div>
-<div class="slide-wrapper two">
-    <div class="slide">
-    <img src="images/bridget1.jpg" alt="bridget">
-</div>
-    <div class="slide">
-    <img src="images/bridget2.jpg">
-    </div>
-<div class="slide">
-    <img src="images/bridget3.jpg">
-    </div>
-<div class="slide">
-    <img src="images/bridget4.jpg">
-    </div>
-<div class="slide">
-    <img src="images/bridget5.jpg">
-    </div>
-<div class="slide">
-    <img src="images/jackson1.jpg">
-</div>
-<div class="slide">
-    <img src="images/jackson2.jpg">
-</div>
-<div class="slide">
-    <img src="images/tucker1.jpg">
-</div>
-<div class="slide">
-    <img src="images/tucker2.jpg">
-</div>
-<div class="slide">
-    <img src="images/tucker3.jpg">
-</div>
-</div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
 </div>
 </main>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+</script>
 </body>
 </html>
