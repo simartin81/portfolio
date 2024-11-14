@@ -1,6 +1,7 @@
 img{
     height: auto;
     max-width: 100%;
+    padding-top: 10px;
 }
 body{
     background-color: #214237;
@@ -30,6 +31,7 @@ nav>a{
     width: 60px;
     color: white;
     display: inline;
+    padding-bottom: 5px;
 }
 nav>a:hover{
     color:#C26B87;
@@ -62,4 +64,7 @@ color: #fff;
 }
 .swiper .swiper-pagination-bullet-active{
     background: #fff;
+}
+.swiper-wrapper{
+    padding: 20px;
 }
