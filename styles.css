@@ -18,15 +18,10 @@ header{
     font-style: normal;
     font-size: x-large;
 }
-main>h2{
-    background-color: #f1e8ca;
-    width: fit-content;
-    padding: 5px;
-}
 main p{
     background-color: #f1e8ca;
     max-width: 850px;
-    padding: 5px;
+    text-align: center;
 }
 .music{
     background-color: #f1e8ca;
@@ -93,4 +88,40 @@ li a{
 li>a:hover{
     color: #dd855c;
     background-color: #9ebd9e;
+}
+#center {
+width: 400px;
+margin: auto;
+padding: 1px 10px 1px;
+background-color: #f1e8ca;
+  border-style: solid;
+  border-color: #f1e8ca;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+#h2 {
+    width: fit-content;
+    margin: auto;
+    background-color: #f1e8ca;
+    text-align: center;
+    padding: 1px 10px 1px;
+  border-style: solid;
+  border-color: #f1e8ca;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.music {
+    width: 400px;
+margin: auto;
+padding: 1px 10px 1px;
+background-color: #f1e8ca;
+  border-style: solid;
+  border-color: #f1e8ca;
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#video {
+    width: fit-content;
+    margin: auto;
 }
