@@ -3,20 +3,22 @@ img{
     max-width: 100%;
     padding: 5px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 body{
     background-color: #9ebd9e;
     font-family: "kumbh-sans-variable", sans-serif;
     font-variation-settings: "wght" 400;
+    border: 10px double #214237;
+    border-radius: 4px;
+    padding: 20px;
 }
 header{
     color: #fff;
     font-family: "broadacre-regular-1", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: x-large;
+    font-size: larger;
 }
 main p{
     background-color: #f1e8ca;
@@ -31,7 +33,6 @@ nav>a{
     width: 60px;
     color: #745151;
     display: inline-block;
-    padding: 0px;
     font-size: medium;
     margin: auto;
     justify-content: center;
@@ -40,8 +41,8 @@ header>a{
     color: #745151;
     padding: 1px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    text-align: center;
 }
 header>a:hover{
     color: #dd855c;
@@ -68,19 +69,18 @@ color: #fff;
 .swiper .swiper-pagination-bullet-active{
     background: #fff;
 }
-.swiper-wrapper{
-    padding: 20px;
-}
 a{
     text-decoration: none;
 }
-li{
+nav li{
     display: inline;
     text-align: center;
 }
 nav ul{
     text-align: center;
     text-decoration: none;
+    padding: 2px;
+    font-size: large;
 }
 li a{
     color: #745151;
@@ -90,7 +90,7 @@ li>a:hover{
     background-color: #9ebd9e;
 }
 #center {
-width: 400px;
+width: 600px;
 margin: auto;
 padding: 1px 10px 1px;
 background-color: #f1e8ca;
@@ -99,7 +99,7 @@ background-color: #f1e8ca;
   border-radius: 10px;
   margin-top: 1rem;
 }
-#h2 {
+#h2{
     width: fit-content;
     margin: auto;
     background-color: #f1e8ca;
@@ -109,6 +109,16 @@ background-color: #f1e8ca;
   border-color: #f1e8ca;
   border-radius: 10px;
   margin-bottom: 1rem;
+}
+.h2video{
+    background-color: #f1e8ca;
+    text-align: center;
+    padding: 1px 10px 1px;
+    border-style: solid;
+    border-color: #f1e8ca;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    width: fit-content;
 }
 .music {
     width: 400px;
@@ -121,7 +131,31 @@ background-color: #f1e8ca;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-#video {
+.video{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.parent {
+    max-width: 800px;
+    padding: 20px;
+}
+#me{
+    width: 600px;
+}
+#flute{
+    height: 500px;
+}
+#linkedin{
     width: fit-content;
     margin: auto;
+    max-width: 50px;
+    padding: 100px;
 }
