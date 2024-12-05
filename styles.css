@@ -6,12 +6,12 @@ img{
     margin: auto;
 }
 body{
-    background-color: #9ebd9e;
     font-family: "kumbh-sans-variable", sans-serif;
     font-variation-settings: "wght" 400;
     border: 10px double #214237;
     border-radius: 4px;
     padding: 20px;
+    background-image: linear-gradient(to bottom right, #9ebd9e, #ECECE3)
 }
 header{
     color: #fff;
@@ -46,7 +46,6 @@ header>a{
 }
 header>a:hover{
     color: #dd855c;
-    background-color: #9ebd9e;
 }
 .container{
     max-width: 100%;
@@ -87,7 +86,6 @@ li a{
 }
 li>a:hover{
     color: #dd855c;
-    background-color: #9ebd9e;
 }
 #center {
 margin: auto;
