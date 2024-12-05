@@ -90,7 +90,6 @@ li>a:hover{
     background-color: #9ebd9e;
 }
 #center {
-width: fit-content;
 margin: auto;
 padding: 1px 10px 1px;
 background-color: #f1e8ca;
@@ -100,15 +99,15 @@ background-color: #f1e8ca;
   margin-top: 1rem;
 }
 #h2{
-    width: fit-content;
-    margin: auto;
-    background-color: #f1e8ca;
-    text-align: center;
-    padding: 1px 10px 1px;
-  border-style: solid;
-  border-color: #f1e8ca;
-  border-radius: 10px;
-  margin-bottom: 1rem;
+width: fit-content;
+margin: auto;
+background-color: #f1e8ca;
+text-align: center;
+padding: 1px 10px 1px;
+border-style: solid;
+border-color: #f1e8ca;
+border-radius: 10px;
+margin-bottom: 1rem;
 }
 .h2video{
     background-color: #f1e8ca;
