@@ -22,7 +22,7 @@ header{
 }
 main p{
     background-color: #f1e8ca;
-    max-width: 850px;
+    width: fit-content;
     text-align: center;
 }
 .music{
@@ -90,7 +90,7 @@ li>a:hover{
     background-color: #9ebd9e;
 }
 #center {
-width: 600px;
+width: fit-content;
 margin: auto;
 padding: 1px 10px 1px;
 background-color: #f1e8ca;
@@ -119,9 +119,10 @@ background-color: #f1e8ca;
     border-radius: 10px;
     margin-bottom: 1rem;
     width: fit-content;
+    font-size: small;
 }
 .music {
-    width: 400px;
+    width: fit-content;
 margin: auto;
 padding: 1px 10px 1px;
 background-color: #f1e8ca;
