@@ -53,10 +53,10 @@ header>a:hover{
     background: #214237;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
 }
 .swiper{
-    width: 70%;
+    width: 80%;
     height:fit-content;
 }
 .swiper-slide img{
@@ -74,6 +74,8 @@ a{
 nav li{
     display: inline;
     text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #745151;
 }
 nav ul{
     text-align: center;
@@ -148,7 +150,7 @@ background-color: #f1e8ca;
     padding: 20px;
 }
 #me{
-    width: 600px;
+    max-height: 500px;
 }
 #flute{
     height: 500px;
