@@ -20,6 +20,12 @@ header{
     font-style: normal;
     font-size: larger;
 }
+p{
+    line-height: 1.5;
+}
+.music li{
+    line-height: 1.5;
+}
 main p{
     background-color: #f1e8ca;
     width: fit-content;
