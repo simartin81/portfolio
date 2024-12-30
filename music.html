@@ -15,24 +15,28 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <header>
-        <a href="index.html"><h1>Sydney Martin</h1></a>
-    <nav>
-        <ul>
-        <li><a href="music.html">Music</a></li>
-        <li><a href="video.html">Video</a></li>
-        <li><a href="photo.html">Photography</a></li>
-    </ul>
+    <header class="header">
+        <div class="logo_container">
+            <h1>SYDNEY MARTIN</h1>
+            <button onclick={openMenu()} class="hamburger">
+                <img src="images/Hamburger_icon.svg.png" width="50">
+            </button>
+        </div>
+        <nav class="menu">
+        <ul class="navigation">
+            <a href="index.html"><li class="nav_item">Home</li></a>
+            <a href="music.html"><li class="nav_item">Music</li></a>
+            <a href="video.html"><li class="nav_item">Video</li></a>
+            <a href="photo.html"><li class="nav_item">Photography</li></a>
+        </ul>
     </nav>
 </header>
 <main>
     <section class="music">
         <p>
             Throughout my time at the University of Wisconsin-Eau Claire, I was privileged to study flute with Dr. Brian Allred.
-        </p>
-        <p>
+        <br>
             Experience:
-        </p>
         <ul>
             <li>UW-Eau Claire Wind Symphony, Symphony Band, and University Orchestra</li>
             <li>Flute studio</li>
@@ -40,12 +44,40 @@
             <li>Blugold Marching Band (piccolo, trombone, drum major) 2020-2023</li>
             <li>River City Rhythm Drum and Bugle Corps, 2020-2022 (drum major)</li>
             </ul>
+        <br>
         <a href="https://youtu.be/EOhZpk8ekqM">Link to my senior recital</a>
+        </p>
     </section>
     <section>
         <img id="flute" src="images/flute.jpeg" alt="me with my flute">
     </section>
-    <a href="https://www.linkedin.com/in/simartin818"><img id="linkedin" src="images/LinkedIn_logo_initials.png"></a>
 </main>
+<footer>
+    <div class="contact">
+        <p>
+            <ul>
+                <li>
+                    <img id="emailicon" src="images/emailicon.png">
+                </li>
+                <li>
+                    simartin818@gmail.com
+                </li>
+                <li>
+                    <hr>
+                </li>
+                <li>
+                    <hr>
+                </li>
+                <li>
+                    <hr>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/simartin818"><img id="linkedin" src="images/LinkedIn_logo_initials.png"></a>
+                </li>
+            </ul>
+        </p>
+    </div>
+</footer>
+<script src="menu.js"></script>
 </body>
 </html>

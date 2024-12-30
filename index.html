@@ -16,16 +16,22 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <header>
-        <a href="index.html"><h1>Sydney Martin</h1></a>
-    <nav>
-        <ul>
-        <li><a href="music.html">Music</a></li>
-        <li><a href="video.html">Video</a></li>
-        <li><a href="photo.html">Photography</a></li>
-    </ul>
-    </nav>
-</header>
+    <header class="header">
+            <div class="logo_container">
+                <h1>SYDNEY MARTIN</h1>
+                <button onclick={openMenu()} class="hamburger">
+                    <img src="images/Hamburger_icon.svg.png" width="50">
+                </button>
+            </div>
+            <nav class="menu">
+            <ul class="navigation">
+                <a href="index.html"><li class="nav_item">Home</li></a>
+                <a href="music.html"><li class="nav_item">Music</li></a>
+                <a href="video.html"><li class="nav_item">Video</li></a>
+                <a href="photo.html"><li class="nav_item">Photography</li></a>
+            </ul>
+        </nav>
+    </header>
 <main>
     <section>
         <img id="me" src="images/me2.JPG" alt="self portrait">
@@ -35,9 +41,33 @@
         Hi! My name is Sydney Martin and I am an aspiring multimedia specialist. I am a recent graduate from the University of Wisconsin-Eau Claire, where I earned my Bachelor of Science in Music Liberal Arts with a Minor in Multimedia Communication. I love how interdisciplinary multimedia communication is, as it has allowed me to develop skills in many areas. I am interested in pursuing this field and continuing to learn!
     </p>
     </div>
+</main>
 <footer>
-    <a href="https://www.linkedin.com/in/simartin818"><img id="linkedin" src="images/LinkedIn_logo_initials.png"></a>
+    <div class="contact">
+        <p>
+            <ul>
+                <li>
+                    <img id="emailicon" src="images/emailicon.png">
+                </li>
+                <li>
+                    simartin818@gmail.com
+                </li>
+                <li>
+                    <hr>
+                </li>
+                <li>
+                    <hr>
+                </li>
+                <li>
+                    <hr>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/simartin818"><img id="linkedin" src="images/LinkedIn_logo_initials.png"></a>
+                </li>
+            </ul>
+        </p>
+    </div>
 </footer>
-</main>   
+    <script src="menu.js"></script>
 </body>
 </html>
