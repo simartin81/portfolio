@@ -13,7 +13,8 @@ img{
 body{
     font-family: "kumbh-sans-variable", sans-serif;
     font-variation-settings: "wght" 400;
-    background-image: linear-gradient(to bottom right, #9ebd9e, #ECECE3)
+    background-image: linear-gradient(to bottom right, #9ebd9e, #ECECE3);
+    background-size: cover;
 }
 p{
     line-height: 1.5;
@@ -30,22 +31,26 @@ main p{
     max-width: 100%;
     height: 100vh;
     background: #214237;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
+    position: relative;
 }
 .swiper{
-    width: 80%;
+    width: 70%;
     height:fit-content;
 }
 .swiper-slide img{
-    width: 100%;
+    width: 70%;
+    padding: 50px;
 }
 .swiper .swiper-button-prev, .swiper .swiper-button-next{
-color: #fff;
+color: #214237;
 }
 .swiper .swiper-pagination-bullet-active{
-    background: #fff;
+    background: #214237;
+}
+.swiper-pagination{
+    flex: 1 1 auto;
+    position: absolute;
+    justify-content: center;
 }
 #center {
 margin: auto;
@@ -58,9 +63,8 @@ max-width: 600px;
     text-align: center;
     padding-left: 20px;
     padding-top: 20px;
-    margin-bottom: 1rem;
     width: fit-content;
-    font-size: 18px;
+    font-size: 16px;
     color: #745151;
 }
 .music{
@@ -208,6 +212,9 @@ font-size: smaller;
     .music{
         padding: 20px;
     }
+    .swiper-pagination{
+    display: none;
+}
 }
 
    
