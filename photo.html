@@ -13,7 +13,10 @@
     <link rel="mask-icon" href="downloads/favicon_package_v0/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     <style>
         body {
             animation: fadeInAnimation ease 1s;
@@ -33,113 +36,143 @@
     </style>
 </head>
 <body>
-  <header class="header">
-    <div class="logo_container">
-      <h1>SYDNEY MARTIN</h1>
-        <button onclick={openMenu()} class="hamburger">
-            <img src="images/Hamburger_icon.svg.png" width="50">
-        </button>
-    </div>
-    <nav class="menu">
-    <ul class="navigation">
-        <a href="index.html"><li class="nav_item">Home</li></a>
-        <a href="music.html"><li class="nav_item">Music</li></a>
-        <a href="video.html"><li class="nav_item">Video</li></a>
-        <a href="photo.html"><li class="nav_item">Photography</li></a>
-    </ul>
-</nav>
-</header>
+    <header class="header">
+        <div class="logo_container">
+            <div class="name">
+                <a href="index.html"><h1>SYDNEY MARTIN</h1></a>
+            </div>
+            <div class="hamburgerbutton">
+                <button onclick={openMenu()} class="hamburger">
+                    <img id ="hamburger_icon" src="images/Hamburger_icon.svg.png" width="50">
+                </button>
+            </div>
+        </div>
+            <nav class="menu">
+            <ul class="navigation">
+                <a href="music.html"><li class="nav_item">MUSIC</li></a>
+                <a href="video.html"><li class="nav_item">VIDEO</li></a>
+                <a href="photo.html"><li class="nav_item">PHOTOGRAPHY</li></a>
+            </ul>
+        </nav>
+    </header>
 <main>
-<div class= ".photo_container">
-    <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="images/bridget1.jpg"></div>
-          <div class="swiper-slide"><img src="images/chloe1.jpg"></div>
-          <div class="swiper-slide"><img src="images/livi1.jpg"></div>
-          <div class="swiper-slide"><img src="images/jackson1.jpg"></div>
-          <div class="swiper-slide"><img src="images/tucker1.jpg"></div>
-          <div class="swiper-slide"><img src="images/ilka1.jpg"></div>
-          <div class="swiper-slide"><img src="images/nick1.jpg"></div>
-          <div class="swiper-slide"><img src="images/bridget2.jpg"></div>
-          <div class="swiper-slide"><img src="images/bridget3.jpg"></div>
-          <div class="swiper-slide"><img src="images/bridget4.jpg"></div>
-          <div class="swiper-slide"><img src="images/bridget5.jpg"></div>
-          <div class="swiper-slide"><img src="images/jackson2.jpg"></div>
-          <div class="swiper-slide"><img src="images/tucker2.jpg"></div>
-          <div class="swiper-slide"><img src="images/tucker3.jpg"></div>
-          <div class="swiper-slide"><img src="images/livi2.jpg"></div>
-          <div class="swiper-slide"><img src="images/livi3.jpg"></div>
-          <div class="swiper-slide"><img src="images/ilka2.jpg"></div>
-          <div class="swiper-slide"><img src="images/ilka3.jpg"></div>
-          <div class="swiper-slide"><img src="images/ilka4.jpg"></div>
-          <div class="swiper-slide"><img src="images/ilka5.jpg"></div>
-          <div class="swiper-slide"><img src="images/random.jpg"></div>
-          <div class="swiper-slide"><img src="images/chloe2.jpg"></div>
-          <div class="swiper-slide"><img src="images/chloe3.jpg"></div>
-          <div class="swiper-slide"><img src="images/chloe4.jpg"></div>
-          <div class="swiper-slide"><img src="images/chloe5.jpg"></div>
-          <div class="swiper-slide"><img src="images/chloe6.jpg"></div>
-          <div class="swiper-slide"><img src="images/chloe7.jpg"></div>
-          <div class="swiper-slide"><img src="images/chloe8.jpg"></div>
-          <div class="swiper-slide"><img src="images/chloe9.jpg"></div>
-          <div class="swiper-slide"><img src="images/nick1.jpg"></div>
-          <div class="swiper-slide"><img src="images/nick2.jpg"></div>
-          <div class="swiper-slide"><img src="images/nick3.jpg"></div>
-          <div class="swiper-slide"><img src="images/nick4.jpg"></div>
-          <div class="swiper-slide"><img src="images/nick5.jpg"></div>
-          <div class="swiper-slide"><img src="images/nick6.jpg"></div>
-          <div class="swiper-slide"><img src="images/nc1.jpg"></div>
-          <div class="swiper-slide"><img src="images/nc2.jpg"></div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        </div>
-        </div>               
+    <div class="carousel_container">
+    <swiper-container slides-per-view="auto" autoplay="true" navigation="true" simulateTouch="true" speed="800" effect="coverflow">
+        <swiper-slide>
+            <img src="images/bridget1.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/chloe1.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/livi1.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/jackson1.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/tucker1.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/ilka1.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/nick1.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/bridget2.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/bridget3.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/bridget4.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/bridget5.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/jackson2.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/tucker2.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/tucker3.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/livi2.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/livi3.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/ilka2.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/ilka3.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/ilka4.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/ilka5.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/random.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/chloe2.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/chloe3.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/chloe4.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/chloe5.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/chloe6.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/chloe7.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/chloe8.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/chloe9.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/nick1.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/nick2.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/nick3.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/nick4.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/nick5.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/nick6.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/nc1.jpg">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/nc2.jpg">
+        </swiper-slide>
+      </swiper-container>
+      </div>
 </main>
-<footer>
-  <div class="contact">
-      <p>
-          <ul>
-              <li>
-                  <img id="emailicon" src="images/emailicon.png">
-              </li>
-              <li>
-                  simartin818@gmail.com
-              </li>
-              <li>
-                  <hr>
-              </li>
-              <li>
-                  <hr>
-              </li>
-              <li>
-                  <a href="https://www.linkedin.com/in/simartin818"><img id="linkedin" src="images/LinkedIn_logo_initials.png"></a>
-              </li>
-          </ul>
-      </p>
-  </div>
-</footer>
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-<script>
-    const swiper = new Swiper('.swiper', {
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-  loop: true,
-
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 <script src="menu.js"></script>
 </body>
 </html>

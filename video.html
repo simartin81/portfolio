@@ -34,76 +34,52 @@
 <body>
     <header class="header">
         <div class="logo_container">
-            <h1>SYDNEY MARTIN</h1>
-            <button onclick={openMenu()} class="hamburger">
-                <img src="images/Hamburger_icon.svg.png" width="50">
-            </button>
+            <div class="name">
+                <a href="index.html"><h1>SYDNEY MARTIN</h1></a>
+            </div>
+            <div class="hamburgerbutton">
+                <button onclick={openMenu()} class="hamburger">
+                    <img id ="hamburger_icon" src="images/Hamburger_icon.svg.png" width="50">
+                </button>
+            </div>
         </div>
-        <nav class="menu">
-        <ul class="navigation">
-            <a href="index.html"><li class="nav_item">Home</li></a>
-            <a href="music.html"><li class="nav_item">Music</li></a>
-            <a href="video.html"><li class="nav_item">Video</li></a>
-            <a href="photo.html"><li class="nav_item">Photography</li></a>
-        </ul>
-    </nav>
-</header>
+            <nav class="menu">
+            <ul class="navigation">
+                <a href="music.html"><li class="nav_item">MUSIC</li></a>
+                <a href="video.html"><li class="nav_item">VIDEO</li></a>
+                <a href="photo.html"><li class="nav_item">PHOTOGRAPHY</li></a>
+            </ul>
+        </nav>
+    </header>
 <main>
     <div class="h2video">
 <h2>School Projects</h2>
 </div>
-<div class="parent">
-<div class="video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/hhLBnXW8T-c?si=PXG6QfPkK8WzlDab" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-</div>
-<div class="parent">
-<div class="video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/t0KoKgyzXEI?si=ZsdSS6qvsUIw_Gpd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-</div>
-<div class="parent">
-<div class="video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/wN2Nhgyz7RM?si=wvzp-iwx0QFYHWsm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-</div>
-    <div class="h2video">
-<h2>Personal Projects</h2>
-</div>
-<div class="parent">
+<div class="video_container">
+    <div class="parent1">
     <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/dKDMxAxNEAc?si=IV0pD9Ls55LVyDae" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="400" height="252" src="https://www.youtube.com/embed/hhLBnXW8T-c?si=PXG6QfPkK8WzlDab" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-</div>
-<div class="parent">
     <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/APzbcXVXWfg?si=FwZqqT9CYwMdjVQl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+        <iframe width="400" height="252" src="https://www.youtube.com/embed/t0KoKgyzXEI?si=ZsdSS6qvsUIw_Gpd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="video">
+        <iframe width="400" height="252" src="https://www.youtube.com/embed/wN2Nhgyz7RM?si=wvzp-iwx0QFYHWsm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+        <div class="h2video">
+    <h2>Personal Projects</h2>
+    </div>
+    <div class="parent2">
+        <div class="video">
+            <iframe width="400" height="252" src="https://www.youtube.com/embed/dKDMxAxNEAc?si=IV0pD9Ls55LVyDae" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe width="400" height="252" src="https://www.youtube.com/embed/APzbcXVXWfg?si=FwZqqT9CYwMdjVQl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
 </div>
 </main>
-<footer>
-    <div class="contact">
-        <p>
-            <ul>
-                <li>
-                    <img id="emailicon" src="images/emailicon.png">
-                </li>
-                <li>
-                    simartin818@gmail.com
-                </li>
-                <li>
-                    <hr>
-                </li>
-                <li>
-                    <hr>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/simartin818"><img id="linkedin" src="images/LinkedIn_logo_initials.png"></a>
-                </li>
-            </ul>
-        </p>
-    </div>
-</footer>
 <script src="menu.js"></script>
 </body>
 </html>

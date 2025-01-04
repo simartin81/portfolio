@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="styles.css">
     <title>Sydney Martin</title>
     <link rel="stylesheet" href="https://use.typekit.net/tbz1qha.css">
-    <link rel="stylesheet" href="https://use.typekit.net/tbz1qha.css">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -34,54 +33,41 @@
 </head>
 <body>
     <header class="header">
-            <div class="logo_container">
-                <h1>SYDNEY MARTIN</h1>
+        <div class="logo_container">
+            <div class="name">
+                <a href="index.html"><h1>SYDNEY MARTIN</h1></a>
+            </div>
+            <div class="hamburgerbutton">
                 <button onclick={openMenu()} class="hamburger">
-                    <img src="images/Hamburger_icon.svg.png" width="50">
+                    <img id ="hamburger_icon" src="images/Hamburger_icon.svg.png" width="50">
                 </button>
             </div>
+        </div>
             <nav class="menu">
             <ul class="navigation">
-                <a href="index.html"><li class="nav_item">Home</li></a>
-                <a href="music.html"><li class="nav_item">Music</li></a>
-                <a href="video.html"><li class="nav_item">Video</li></a>
-                <a href="photo.html"><li class="nav_item">Photography</li></a>
+                <a href="music.html"><li class="nav_item">MUSIC</li></a>
+                <a href="video.html"><li class="nav_item">VIDEO</li></a>
+                <a href="photo.html"><li class="nav_item">PHOTOGRAPHY</li></a>
             </ul>
         </nav>
     </header>
 <main>
-    <section>
-        <img id="me" src="images/me2.JPG" alt="self portrait">
-    </section>
-    <div id="center">
-    <p>
-        Hi! My name is Sydney Martin and I am an aspiring multimedia specialist. I am a recent graduate from the University of Wisconsin-Eau Claire, where I earned my Bachelor of Science in Music Liberal Arts with a Minor in Multimedia Communication. I love how interdisciplinary multimedia communication is, as it has allowed me to develop skills in many areas. I am interested in pursuing this field and continuing to learn!
+<div class="about">
+<div class="written">
+    <p id="greeting">
+        Hello!
+    <p id="greeting2">
+        I'm Sydney &#8212 an aspiring multimedia specialist. 
     </p>
-    </div>
+    <p id="aboutme">
+        I am a recent graduate from the University of Wisconsin-Eau Claire, where I earned my Bachelor of Science in Music Liberal Arts with a Minor in Multimedia Communication. The interdisciplinary nature of multimedia communication allows me to combine creativity and functionality to create engaging, impactful content in various mediums. I am interested in pursuing this field and continuing to learn!
+    </p>
+</div>
+<div class="me">
+    <img id="me" src="images/me2.JPG">
+</div>
+</div>
 </main>
-<footer>
-    <div class="contact">
-        <p>
-            <ul>
-                <li>
-                    <img id="emailicon" src="images/emailicon.png">
-                </li>
-                <li>
-                    simartin818@gmail.com
-                </li>
-                <li>
-                    <hr>
-                </li>
-                <li>
-                    <hr>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/simartin818"><img id="linkedin" src="images/LinkedIn_logo_initials.png"></a>
-                </li>
-            </ul>
-        </p>
-    </div>
-</footer>
     <script src="menu.js"></script>
 </body>
 </html>
