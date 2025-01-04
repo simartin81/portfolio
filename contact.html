@@ -15,7 +15,7 @@
     <meta name="theme-color" content="#ffffff">
     <style>
         body {
-            animation: fadeInAnimation ease 3s;
+            animation: fadeInAnimation ease 1s;
             animation-iteration-count: 1;
             animation-fill-mode: forwards;
         }
@@ -53,22 +53,50 @@
         </nav>
     </header>
 <main>
-<div class="about">
-<div class="written">
-    <p id="greeting">
-        Hello!
-    <p id="greeting2">
-        I'm Sydney &#8212 an aspiring multimedia specialist. 
-    </p>
-    <p id="aboutme">
-        I am a recent graduate from the University of Wisconsin-Eau Claire, where I earned my Bachelor of Science in Music Liberal Arts with a Minor in Multimedia Communication. The interdisciplinary nature of multimedia communication allows me to combine creativity and functionality to create engaging, impactful content in various mediums. I am interested in pursuing this field and continuing to learn!
-    </p>
-</div>
-<div class="me">
-    <img id="me" src="images/me2.JPG">
-</div>
-</div>
+    <div class="form_heading">
+        <h2>Let's chat!</h2>
+        <p>Contact me:</p>
+    </div>
+    <div class="form">
+    <div class="contact-form-container">
+        <form action="https://formsubmit.co/simartin818@gmail.com" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="your name" required>
+                <span class="error-message" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" 
+                       name="email" 
+                       placeholder="your email" required>
+                <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" 
+                       name="phone" 
+                       placeholder="your phone number" required>
+                <span class="error-message" id="phoneError"></span>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" 
+                          name="message" 
+                          placeholder="your message" 
+                          rows="5" required></textarea>
+                <span class="error-message" 
+                      id="messageError"></span>
+            </div>
+            <button type="submit" 
+                    class="submit-button">
+              Submit
+            </button>
+            </div>
+        </form>
+      </div>
+    </div>
 </main>
-    <script src="menu.js"></script>
+<script src="menu.js"></script>
 </body>
 </html>
